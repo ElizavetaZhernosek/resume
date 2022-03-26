@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  background: #e4e3e8;
+  color: #242426;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+@media (max-width: 670px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 50px;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #f7625f;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.hobbies {
+  background: rgb(0, 153, 255);
+  color: #e4e3e8;
+  /* padding-left: 20px; */
+}
+
+.hobbies ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hobbies ul li {
+  margin-bottom: 10px;
+}
+
+.hobbies ul li:hover {
+  color: gray;
+}
+
+.work {
+  background: rgb(41, 111, 158);
+  color: #e4e3e8;
+}
+
+.form div {
+  padding-bottom: 10px;
+}
+
+.contact h4 {
+  padding-bottom: 20px;
+}
+
+.btn {
+  background: rgb(41, 111, 158);
+  color: white;
+  font-family: inherit;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+}
+
+a:hover {
+  color: blue;
+}
+
+/* a:visited {
+  color: red;
+} */
+
+a:active {
+  color: green;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2) {
+  color: black;
+}
+
+.form h4 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: rgb(41, 111, 158);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 15px 0px 10px;
+  outline: none;
+  font-family: inherit;
+}

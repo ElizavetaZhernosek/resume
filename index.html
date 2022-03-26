@@ -6,82 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="job, resume, cv, Elizaveta Zhernosek" />
     <meta name="description" content="CV Elizaveta Zhernosek" />
+    <link rel="stylesheet" href="style.css" />
     <title>Elizaveta Zhernosek</title>
   </head>
   <body>
-    <img src="imgs/avatar.JPG" width="500" alt="Elizaveta Zhernosek" />
-    <h1>Elizaveta Zhernosek</h1>
-    <p>
-      My <strong>skills</strong> are
-      <em>Adobe Illustrator, Adobe InDesign, HTML, CSS.</em>
-    </p>
-    <p>
-      I graduated Belarus State Economic University with
-      <strong>a degree in statistic.</strong>
-    </p>
-    <p>
-      I visited <strong>evening class in English</strong> in Minsk State
-      Linguistic University
-    </p>
-    <h4>My social media</h4>
-    <a href="https://vk.com/id70328435" target="_blank">VK</a>
-    |
-    <a href="https://www.instagram.com/lisa_zhernosek/" target="_blank"
-      >Instagram</a
-    >
-    <h4>My hobbies</h4>
-    <ul>
-      <li>Biathlon</li>
-      <li>Travel</li>
-      <li>Web development</li>
-      <li>Photography</li>
-    </ul>
-    <h4>Work experience</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Employer</th>
-          <th>Position</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Minsk city statistical office</td>
-          <td>Economist</td>
-          <td>2017-2021</td>
-        </tr>
-        <tr>
-          <td>Belstat</td>
-          <td>Main specialist</td>
-          <td>2021-now</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4>To contact me</h4>
-    <form action="">
-      <div>
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="enter your name" />
+    <div class="container">
+      <div class="info">
+        <img src="imgs/avatar.JPG" alt="Elizaveta Zhernosek" class="avatar" />
+        <div class="info-text">
+          <h1>Elizaveta Zhernosek</h1>
+          <p>
+            My <strong>skills</strong> are
+            <em>Adobe Illustrator, Adobe InDesign, HTML, CSS.</em>
+          </p>
+          <p>
+            I graduated Belarus State Economic University with
+            <strong>a degree in statistic.</strong>
+          </p>
+          <p>
+            I visited <strong>evening class in English</strong> in Minsk State
+            Linguistic University
+          </p>
+        </div>
       </div>
-      <div>
-        <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="enter your email" />
+      <div class="social">
+        <h4>My social media</h4>
+        <a href="https://vk.com/id70328435" target="_blank">VK</a>
+        |
+        <a href="https://www.instagram.com/lisa_zhernosek/" target="_blank"
+          >Instagram</a
+        >
       </div>
-      <div>
-        <label for="message">Your message:</label><br />
-        <textarea
-          name=""
-          id="message"
-          cols="20"
-          rows="5"
-          placeholder="Enter message..."
-        ></textarea>
+      <div class="card hobbies">
+        <h4>My hobbies</h4>
+        <ul>
+          <li>Biathlon</li>
+          <li>Travel</li>
+          <li>Web development</li>
+          <li>Photography</li>
+        </ul>
       </div>
-      <!-- <div>
-        <button type="submit">Send</button>
-      </div> -->
-      <input type="submit" value="Send" />
-    </form>
+      <div class="card work">
+        <h4>Work experience</h4>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Employer</th>
+              <th>Position</th>
+              <th>Year</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>Minsk city statistical office</td>
+              <td>Economist</td>
+              <td>2017-2021</td>
+            </tr>
+            <tr>
+              <td>Belstat</td>
+              <td>Main specialist</td>
+              <td>2021-now</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contact">
+        <form action="" class="form">
+          <h4>To contact me</h4>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" placeholder="enter your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" id="email" placeholder="enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Your message:</label>
+            <textarea
+              name=""
+              id="message"
+              cols="20"
+              rows="5"
+              placeholder="Enter message..."
+            ></textarea>
+          </div>
+          <!-- <div>
+             <button type="submit">Send</button>
+             </div> -->
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
